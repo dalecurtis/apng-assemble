@@ -9,7 +9,7 @@ images using individual PNGs encoded by [canvas.toBlob()](https://developer.mozi
 and [offscreenCanvas.convertToBlob()](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/convertToBlob).
 
 A PNG contains a couple metadata chunks and then image data as one or more
-`IDAT` chunks. APNG just adds a few new chunks: `acTL`, 'fcTL' and 'fdAT'. The
+`IDAT` chunks. APNG just adds a few new chunks: `acTL`, `fcTL` and `fdAT`. The
 last of which is just an `IDAT` with a sequence number added.
 
 This demo works by slicing the image data out of each image and applying a minor
